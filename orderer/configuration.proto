@@ -62,3 +62,8 @@ message KafkaBrokers {
 message ChannelRestrictions {
     uint64 max_count = 1; // The max count of channels to allow to be created, a value of 0 indicates no limit
 }
+
+message Hcs {
+    // HCS topic ID in the format of shard.realm.num
+    string TopicId = 1;
+}
